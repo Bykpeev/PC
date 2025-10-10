@@ -3,18 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практика использования CSS</title>
+    <title>Селекторы CSS</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <h1>Выберите задание</h1>
+    <h1>Селекторы CSS</h1>
+    <h2>Применение CSS к разным частям HTML</h2>
+    <p class="item">1. Селектор элемента выбирает элементы на основе их тега HTML.</p>
 
-    <ul>
-        <li><a href="./inline.html">Inline Styles</a></li>
-        <li><a href="./internal.html">Internal Styles</a></li>
-        <li><a href="./external.html">External Styles</a></li>
-    </ul>
+    <ol>
+        <li class="item" value="2">Селекторы классов выбирают элементы на основе значения атрибута class.</li>
+        <li class="item" id="demo-selector" value="3">Селекторы идентификаторов выбирают элементы на основе значения
+            атрибута id.</li>
+
+        <!-- TODO 4: Установите CSS для элементов li, у которых атрибут "value" равен "7" на "color: darkblue" -->
+        <li class="item" value="7">Селекторы атрибутов выбирают элементы на основе их атрибутов и значений.</li>
+
+        <!-- TODO 5: Установите для всех элементов "text-align: center" -->
+        <li class="item" value="9">Универсальный селектор выбирает все элементы.</li>
+    </ol>
 </body>
 
 </html>
